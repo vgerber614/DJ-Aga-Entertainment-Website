@@ -4,6 +4,7 @@ html {
     height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -15,6 +16,7 @@ html {
 
 body {
     width: 100%;
+    overflow-x: hidden;
 }
 
 h1, h2 {
@@ -167,8 +169,6 @@ section {
     background-color: #0B0D22;
 }
 
-#contact .fluid {}
-
 .leftcontact {
     display: contents;
     width: 100%;
@@ -178,13 +178,18 @@ section {
 
 .rightcontact {
     flex-direction: column;
+    padding-left: 5rem;
+}
+
+#contactDescription {
+    text-align: center;
+    padding-bottom: 1rem;
 }
 
 .contactInfo {
     text-align: left;
     width: fit-content;
     margin: auto;
-    padding-left: 5rem;
 }
 
 /* contact form */
@@ -320,11 +325,23 @@ form button:active {
     font-size: 2rem;
 }
 
+/* tablet */
+@media only screen and (max-width: 996px) {
+    #contact .fluid {
+        padding: 0 1rem;
+    }
+    .rightcontact {
+        padding: 0 15px;
+    }
+}
+
 /* mobile */
 @media only screen and (max-width: 600px) {
     .fluid {
         flex-direction: column;
     }
+
+    /* about */
     .about {
         width: auto;
         padding: 1rem 0;
@@ -336,5 +353,36 @@ form button:active {
         display: flex;
         flex-direction: row;
         margin-right: auto;
+    }
+
+    /* pricing */
+    #pricing {
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .priceCards {
+        flex-direction: column;
+    }
+    .priceCard {
+        font-size: 14px;
+        margin: 0.5rem;
+    }
+    .priceCard h2 {
+        font-size: 1.75rem;
+    }
+    .priceCard br {
+
+    }
+
+    /* contact */
+    #contact .fluid {
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+    .leftcontact {
+        display: none;
+    }
+    .hideMobile {
+        display: none;
     }
 }
