@@ -366,29 +366,9 @@ form button:active {
         font-size: 14px;
         padding: 2rem;
     }
-
-    /*.leftcontact {*/
-    /*    display: none;*/
-    /*}*/
-
-    .contactInfo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .leftcontact {
+        display: none;
     }
-    .contactInfo .contactItem {
-        margin: 15px;
-    }
-    #email {
-        overflow-wrap: break-word;
-    }
-    form {
-        min-height: 0;
-    }
-    #messageField {
-        max-height: 96px;
-    }
-    
     .hideMobile {
         display: none;
     }
