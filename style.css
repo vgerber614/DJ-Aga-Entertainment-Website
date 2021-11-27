@@ -356,15 +356,28 @@ form button:active {
     }
 
     /* pricing */
+    #pricing {
+        padding-top: 2rem;
+        text-align: center;
+    }
     .priceCards {
         flex-direction: column;
+    }
+    .priceCard {
+        font-size: 14px;
+        margin: 0.5rem;
+    }
+    .priceCard h2 {
+        font-size: 1.75rem;
+    }
+    .priceCard br {
+
     }
 
     /* contact */
     #contact .fluid {
         flex-direction: column-reverse;
-        font-size: 14px;
-        padding: 2rem;
+        padding: 1rem;
     }
     .leftcontact {
         display: none;
