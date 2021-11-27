@@ -382,6 +382,7 @@ form button:active {
     #contact .fluid {
         flex-direction: column-reverse;
         padding: 1rem;
+        font-size: 14px;
     }
     .leftcontact {
         display: none;
