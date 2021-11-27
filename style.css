@@ -192,6 +192,10 @@ section {
     margin: auto;
 }
 
+.contactInfo a {
+    text-decoration: none;
+}
+
 /* contact form */
 
 form {
