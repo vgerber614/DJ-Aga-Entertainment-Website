@@ -106,14 +106,15 @@ section {
 
 .about {
     padding: 2rem;
-    width: 50%;
+    max-width: 900px;
 }
 
-.rightabout {
+.aboutcolumn {
     flex-direction: column;
+    align-self: flex-start;
 }
 
-.rightabout ul {
+.aboutcolumn ul {
     padding: 1rem;
 }
 
@@ -353,7 +354,7 @@ form button:active {
     #about {
         font-size: 14px;
     }
-    .rightabout {
+    .aboutcolumn {
         display: flex;
         flex-direction: row;
         margin-right: auto;
