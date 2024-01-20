@@ -391,13 +391,7 @@ form button:active {
 
     }
 
-    .hideMobile {
-        display: none;
-    }
-}
-
-/* arbitrary contact info breakpoint */
-@media only screen and (max-width: 1200px) {
+    /* remove if instagram media item added back */
     #contact .fluid {
         flex-direction: column-reverse;
         padding: 1rem;
@@ -406,4 +400,20 @@ form button:active {
     .leftcontact {
         display: none;
     }
+
+    .hideMobile {
+        display: none;
+    }
 }
+
+/* arbitrary contact info breakpoint */
+/* @media only screen and (max-width: 1200px) {
+    #contact .fluid {
+        flex-direction: column-reverse;
+        padding: 1rem;
+        font-size: 14px;
+    }
+    .leftcontact {
+        display: none;
+    }
+} */
