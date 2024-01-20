@@ -67,6 +67,7 @@ section {
     min-height: 100vh;
     width: 100%;
     margin: 0;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -175,6 +176,10 @@ section {
     background-color: #0B0D22;
 }
 
+.instagram-media {
+    padding: 1rem;
+}
+
 .leftcontact {
     display: contents;
     width: 100%;
@@ -184,7 +189,7 @@ section {
 
 .rightcontact {
     flex-direction: column;
-    padding-left: 5rem;
+    padding: 1rem;
 }
 
 #contactDescription {
@@ -207,7 +212,9 @@ section {
 form {
     background-color: rgba(31, 37, 92, 0.25);
     width: 100%;
+    min-width: 426px;
     padding: 1rem;
+    margin: 1rem;
     min-height: 400px;
     font-size: 14px;
 }
@@ -384,16 +391,19 @@ form button:active {
 
     }
 
-    /* contact */
+    .hideMobile {
+        display: none;
+    }
+}
+
+/* arbitrary contact info breakpoint */
+@media only screen and (max-width: 1200px) {
     #contact .fluid {
         flex-direction: column-reverse;
         padding: 1rem;
         font-size: 14px;
     }
     .leftcontact {
-        display: none;
-    }
-    .hideMobile {
         display: none;
     }
 }
