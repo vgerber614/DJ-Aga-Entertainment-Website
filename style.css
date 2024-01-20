@@ -106,12 +106,17 @@ section {
 
 .about {
     padding: 2rem;
-    max-width: 900px;
+    max-width: 800px;
 }
 
 .aboutcolumn {
     flex-direction: column;
     align-self: flex-start;
+    padding: 1rem;
+}
+
+.aboutcolumn h3 {
+    text-align: center;
 }
 
 .aboutcolumn ul {
